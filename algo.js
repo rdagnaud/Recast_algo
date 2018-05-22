@@ -43,7 +43,6 @@ const GetMax = (node, max = (node ? node.value : 0)) => !node ? max : Math.max(n
 
 const RandomTree = CreateRandomTree();
 let HandmadeTree = new BinaryTree();
-const RandomTree2 = new BinaryTree();
 
 // Manually putting values in HandmadeTree
 HandmadeTree.add(-5);
@@ -54,9 +53,6 @@ HandmadeTree.add(-3);
 console.log("Listing values of the random tree:");
 DisplayTree(RandomTree.root);
 console.log("The max value of the random tree is " + GetMax(RandomTree.root));
-console.log("Listing values of the random tree 2:");
-//DisplayTree(RandomTree2.root);
-console.log("The max value of the random tree 2 is " + GetMax(RandomTree2.root));
 console.log("Listing values of the handmade tree:");
 DisplayTree(HandmadeTree.root);
 console.log("The max value of the handmade tree is " + GetMax(HandmadeTree.root));
